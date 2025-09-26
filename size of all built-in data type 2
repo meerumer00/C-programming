@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+    char ch;
+    printf("size of char: %d byte(S)\n", sizeof(ch));
+    printf("size of int: %d byte(S)\n", sizeof(int));
+    printf("size of float: %d byte(s)\n", sizeof(float));
+    printf("size of double: %d byte(s)\n", sizeof(double));
+    printf("size of short: %d byte(s)\n", sizeof(short int));
+    printf("size of long: %d byte(s)\n", sizeof(long int));
+    printf("size of long long: %d byte(s)\n", sizeof(long int));
+    return 0;
+}
