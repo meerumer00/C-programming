@@ -1,0 +1,26 @@
+// program to print the grand of student on the basis of marks obtain by student.
+#include<stdio.h>
+int main(){
+    int marks;
+    printf("Enter the marks :");
+    scanf("%d", &marks);
+    if (marks >= 90) {
+        printf("Grand:A+\n");
+    }
+    else if (marks >= 80) {
+        printf ("Grand:A\n");
+    }
+    else if (marks >=70) {
+        printf("Grang:B++\n");
+    }
+    else if (marks >=60) {
+        printf("Grand:B\n");
+    }
+    else if (marks >=50) {
+        printf("Grand:C\n");
+    }
+     else {
+        printf("Grand:F\n");
+     }
+     return 0;
+}
