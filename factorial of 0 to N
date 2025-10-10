@@ -1,0 +1,15 @@
+//WAP to print the factorial of all numbers from 0 to N.
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter the value of N");
+    scanf("%d", &n);
+    for (int num=0; num<=n; num++){
+        int fact = 1;
+        for(int i=1; i<=num; i++){
+            fact= fact * i;
+        }    
+        printf("Factorial of %d is %d\n", num, fact);
+    }
+    return 0;
+}
