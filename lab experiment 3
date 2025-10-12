@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main(){
+    char ch = 'g'; 
+    int x = 567;
+    float y = 67.123;
+    double z = 190.452;
+    printf("value of x = %d\nvalue ofz = %f\nvalue of ch = %ch\nvalue of z = %.lf" ,x, z, ch, y);
+return 0;
+}
