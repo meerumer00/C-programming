@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int x1 = 0 ,y1 = 0 ,x2 = 3 ,y2 = 4;
+    scanf("%d %d %d %d" ,&x1 ,&y1 ,&x2 ,&y2);
+    float distance ;
+    distance = sqrt((x2-x1)*(x2-x1) +(y2-y1)*(y2-y1));
+    printf("%.2f" ,distance);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
