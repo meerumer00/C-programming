@@ -1,0 +1,7 @@
+#include<stdio.h>
+int main(){
+    int x = 78, y=123, z= 75;
+      int result =! (x>y);
+    printf("%d", x, y, z);
+    return 0;
+}
