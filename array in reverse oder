@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    int size;
+    printf("array size ");
+    scanf("%d",&size);
+    int arr[size];
+    for(int i=0;i<size;i++){
+        printf("enter element %d: ",i+1);
+        scanf("%d",&arr[i]);
+    }
+    printf("array in reverse order: ");
+    for(int i=size-1;i>=0;i--){
+        printf("%d ",arr[i]);
+    }
+    return 0;
+}
