@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <math.h>
+
+int isArmstrong(int n) {
+    int temp=n, digits=0, sum=0;
+    while(temp>0) {
+        digits++;
+        temp/=10;
+    }
+    temp=n;
+    while(temp>0) {
+        int d=temp%10;
+        sum+=pow(d, digits);
+        temp/=10;
+    }
+    return sum==n;
+}
+
+int isPrime(int n) {
+    if(n<2) return 0;
+    for(int i=2;i*i<=n;i++)
+        if(n%i==0) return 0;
+    return 1;
+}
+
+int isPerfect(int n) {
+    int sum=0;
+    for(int i=1;i<=n/2;i++)
+        if(n%i==0) sum+=i;
+    return sum==n;
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    if(isArmstrong(n))
+        printf("Armstrong Number");
+    else if(isPrime(n))
+        printf("Prime Number");
+    else if(isPerfect(n))
+        printf("Perfect Number");
+    else
+        printf("None of these");
+
+    return 0;
+}
